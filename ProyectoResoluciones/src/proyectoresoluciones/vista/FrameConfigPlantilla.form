@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="lblNumeroResolucion" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblNombreDirectorAYR" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblFecha" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtFecha" pref="129" max="32767" attributes="0"/>
+                          <Component id="txtNumeroResolucion" pref="129" max="32767" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="txtHora" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtNombreDirectorAYR" alignment="0" pref="127" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="txtNumeroSolicitud" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="lblNombreDirectorEscuela" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtNombreDirectorEscuela" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblEstudiante" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCarnet" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCurso" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtEstudiante" max="32767" attributes="0"/>
+                          <Component id="txtCarnet" max="32767" attributes="0"/>
+                          <Component id="txtCurso" pref="129" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblNumeroGrupo" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblPeriodo" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblProfesor" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblAsunto1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblAsunto3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtAsunto1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtAsunto3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtNumeroGrupo" alignment="0" min="-2" pref="53" max="-2" attributes="0"/>
+                          <Component id="txtPeriodo" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                          <Component id="txtProfesor" alignment="1" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="lblNombreGestor" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="txtNombreGestor" min="-2" pref="129" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="btnGuardar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="267" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtNumeroSolicitud" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblNumeroResolucion" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNumeroResolucion" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblNumeroGrupo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNumeroGrupo" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblNombreDirectorAYR" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNombreDirectorAYR" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPeriodo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPeriodo" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtHora" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblProfesor" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtProfesor" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txtFecha" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblAsunto1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtAsunto1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="lblFecha" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblNombreDirectorEscuela" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNombreDirectorEscuela" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblAsunto3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtAsunto3" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblEstudiante" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEstudiante" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNombreGestor" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblNombreGestor" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="txtCarnet" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblCarnet" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblCurso" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCurso" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btnGuardar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="156" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblFecha">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fecha:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblNombreGestor">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre gestor:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtNombreGestor">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblNombreDirectorEscuela">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre del director de la escuela:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtNombreDirectorEscuela">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombreDirectorEscuelaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblNombreDirectorAYR">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre del director de AYR:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtNombreDirectorAYR">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombreDirectorAYRActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JFormattedTextField" name="txtFecha">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnGuardar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Guardar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblNumeroResolucion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Numero de resoluci&#xf3;n:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtNumeroResolucion">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Hora:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtHora">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEstudiante">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Estudiante:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEstudiante">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblCarnet">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Carnet:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCarnet">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCarnetActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblCurso">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Curso:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCurso">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblNumeroGrupo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="N&#xfa;mero de grupo:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtNumeroGrupo">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblPeriodo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Per&#xed;odo:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtPeriodo">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblProfesor">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Profesor:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtProfesor">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAsunto1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Asunto 1:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAsunto3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Asunto 2:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAsunto1">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAsunto1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAsunto3">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtNumeroSolicitud">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="N&#xfa;mero de solicitud:"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
