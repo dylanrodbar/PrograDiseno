@@ -5,7 +5,7 @@ import javax.swing.JComboBox;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import proyectoresoluciones.datos.Situacion;
-import proyectoresoluciones.negocio.DTOSolicitud;
+import proyectoresoluciones.negocio.DTOResolucion;
 import proyectoresoluciones.negocio.UIFrameSolicitud;
 
 public class FrameSolicitud extends javax.swing.JFrame {
@@ -50,6 +50,7 @@ public class FrameSolicitud extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Administrador de Resoluciones");
 
         jLabel1.setText("Estas son todas las solicitudes en el sistema:");
 
@@ -198,21 +199,18 @@ public class FrameSolicitud extends javax.swing.JFrame {
         String descripcion= (String) this.getTablaSolicitudes().getValueAt(fila, 9);
         int numeroSolicitud = Integer.parseInt((String) getTablaSolicitudes().getValueAt(fila, 10));
 
-        DTOSolicitud dtoSolicitud = new DTOSolicitud();
-        dtoSolicitud.setFecha(fecha);
-        dtoSolicitud.setIdSolicitante(idSolicitante);
-        dtoSolicitud.setIdentificacion(carnet);
-        dtoSolicitud.setNombre(nombreEstudiante);
-        dtoSolicitud.setTelefono(celularEstudiante);
-        dtoSolicitud.setPeriodo(periodo);
-        dtoSolicitud.setCodigoCurso(curso);
-        dtoSolicitud.setNumSolicitud(numeroSolicitud);
+        DTOResolucion dtoResolucion = new DTOResolucion();
+        dtoResolucion.setFecha(fecha);
+        dtoResolucion.setCarnet(carnet);
+        dtoResolucion.setEstudiante(nombreEstudiante);
+        dtoResolucion.setPeriodo(periodo);
+        dtoResolucion.setCurso(curso);
+        dtoResolucion.setNumeroSolicitud(numeroSolicitud);  
+        dtoResolucion.setNoGrupo(grupo);
+  
+
         
-        dtoSolicitud.setGrupo(Integer.parseInt(grupo));
-        
-        dtoSolicitud.setDescripcion(descripcion);
-        
-        FrameResolucion frameResolucion = new FrameResolucion(dtoSolicitud);
+        FrameResolucion frameResolucion = new FrameResolucion(dtoResolucion);
         this.dispose();
         
     }//GEN-LAST:event_btnAplicarResolucionActionPerformed

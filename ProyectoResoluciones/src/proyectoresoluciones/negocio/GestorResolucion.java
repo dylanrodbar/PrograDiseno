@@ -47,11 +47,9 @@ public class GestorResolucion {
         String noGrupo = dtoResolucion.getNoGrupo();
         String periodo = dtoResolucion.getPeriodo();
         String profesor = dtoResolucion.getProfesor();
-        String asunto = dtoResolucion.getAsunto();
-        String asunto2 = dtoResolucion.getAsunto2();
-        String asunto3 = dtoResolucion.getAsunto3();
+
         int numeroSolicitud = dtoResolucion.getNumeroSolicitud();
-        daoResolucion.configurarResolucion(codigo, nombreAYR, hora, fecha, nombreDirector, estudiante, carnet, curso, noGrupo, periodo, profesor, asunto, asunto2, asunto3, considerandos, numeroSolicitud);
+        daoResolucion.configurarResolucion(codigo, nombreAYR, hora, fecha, nombreDirector, estudiante, carnet, curso, noGrupo, periodo, profesor, considerandos, numeroSolicitud);
         
        
         daoResolucion.generarResolucion();  
@@ -82,11 +80,9 @@ public class GestorResolucion {
         String noGrupo = dtoResolucion.getNoGrupo();
         String periodo = dtoResolucion.getPeriodo();
         String profesor = dtoResolucion.getProfesor();
-        String asunto = dtoResolucion.getAsunto();
-        String asunto2 = dtoResolucion.getAsunto2();
-        String asunto3 = dtoResolucion.getAsunto3();
+
         int numeroSolicitud = dtoResolucion.getNumeroSolicitud();
-        daoResolucion.configurarResolucion(codigo, nombreAYR, hora, fecha, nombreDirector, estudiante, carnet, curso, noGrupo, periodo, profesor, asunto, asunto2, asunto3, considerandos, numeroSolicitud);
+        daoResolucion.configurarResolucion(codigo, nombreAYR, hora, fecha, nombreDirector, estudiante, carnet, curso, noGrupo, periodo, profesor, considerandos, numeroSolicitud);
         
         /*resolucion.setConsiderandos(dtoResolucion.getConsiderandos());
         resolucion.setCodigo(dtoResolucion.getCodigo());
@@ -168,11 +164,9 @@ public class GestorResolucion {
         String noGrupo = dtoResolucion.getNoGrupo();
         String periodo = dtoResolucion.getPeriodo();
         String profesor = dtoResolucion.getProfesor();
-        String asunto = dtoResolucion.getAsunto();
-        String asunto2 = dtoResolucion.getAsunto2();
-        String asunto3 = dtoResolucion.getAsunto3();
+  
         int numeroSolicitud = dtoResolucion.getNumeroSolicitud();
-        daoResolucion.configurarResolucion(codigo, nombreAYR, hora, fecha, nombreDirector, estudiante, carnet, curso, noGrupo, periodo, profesor, asunto, asunto2, asunto3, considerandos, numeroSolicitud);
+        daoResolucion.configurarResolucion(codigo, nombreAYR, hora, fecha, nombreDirector, estudiante, carnet, curso, noGrupo, periodo, profesor, considerandos, numeroSolicitud);
         
         daoResolucion.generarArchivo(tipo);
         

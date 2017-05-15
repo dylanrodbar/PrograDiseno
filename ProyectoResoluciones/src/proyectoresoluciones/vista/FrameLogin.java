@@ -1,5 +1,6 @@
 package proyectoresoluciones.vista;
 
+import java.awt.Color;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import proyectoresoluciones.negocio.UIFrameLogin;
@@ -9,7 +10,10 @@ public class FrameLogin extends javax.swing.JFrame {
     
     
     public FrameLogin() {
-        initComponents();
+         super();
+
+        initComponents();   
+
     }
 
     @SuppressWarnings("unchecked")
@@ -22,15 +26,24 @@ public class FrameLogin extends javax.swing.JFrame {
         txtCorreoElectronico = new javax.swing.JTextField();
         txtIdentificacion = new javax.swing.JPasswordField();
         btnIniciarSesion = new javax.swing.JButton();
+        labelIcono = new javax.swing.JLabel();
+        jLabelTitulo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Administrador de Resoluciones");
+        setBackground(new java.awt.Color(210, 253, 238));
 
-        lblBienvenida.setText("Bienvenido(a), para continuar, digite un correo electrónico y una contraseña");
+        lblBienvenida.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        lblBienvenida.setText("Bienvenido(a). A continuación, inicie sesión:");
 
+        lblCorreoElectronico.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 11)); // NOI18N
         lblCorreoElectronico.setText("Correo electrónico:");
 
+        lblIdentificacion.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 11)); // NOI18N
         lblIdentificacion.setText("Identificacion:");
 
+        btnIniciarSesion.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        btnIniciarSesion.setForeground(new java.awt.Color(51, 153, 0));
         btnIniciarSesion.setText("Iniciar sesión");
         btnIniciarSesion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -38,44 +51,64 @@ public class FrameLogin extends javax.swing.JFrame {
             }
         });
 
+        labelIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconoR.png"))); // NOI18N
+        labelIcono.setMaximumSize(new java.awt.Dimension(256, 256));
+
+        jLabelTitulo.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
+        jLabelTitulo.setText("Administrador de Resoluciones");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(117, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblBienvenida)
-                    .addGroup(layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblCorreoElectronico)
-                            .addComponent(lblIdentificacion))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtCorreoElectronico)
-                            .addComponent(txtIdentificacion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE))))
-                .addGap(79, 79, 79))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblCorreoElectronico)
+                                    .addComponent(lblIdentificacion))
+                                .addGap(29, 29, 29)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtIdentificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(lblBienvenida))
+                        .addGap(198, 198, 198))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(labelIcono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabelTitulo)
+                        .addGap(134, 134, 134))))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnIniciarSesion)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(277, 277, 277)
+                .addComponent(btnIniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addComponent(jLabelTitulo))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(labelIcono, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(41, 41, 41)
                 .addComponent(lblBienvenida)
-                .addGap(33, 33, 33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCorreoElectronico)
                     .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(53, 53, 53)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblIdentificacion)
-                    .addComponent(txtIdentificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(52, 52, 52)
-                .addComponent(btnIniciarSesion)
-                .addContainerGap(74, Short.MAX_VALUE))
+                    .addComponent(txtIdentificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblIdentificacion))
+                .addGap(48, 48, 48)
+                .addComponent(btnIniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(129, Short.MAX_VALUE))
         );
 
         pack();
@@ -120,6 +153,8 @@ public class FrameLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnIniciarSesion;
+    private javax.swing.JLabel jLabelTitulo;
+    private javax.swing.JLabel labelIcono;
     private javax.swing.JLabel lblBienvenida;
     private javax.swing.JLabel lblCorreoElectronico;
     private javax.swing.JLabel lblIdentificacion;

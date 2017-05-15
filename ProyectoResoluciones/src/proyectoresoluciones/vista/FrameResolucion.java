@@ -1,43 +1,53 @@
 package proyectoresoluciones.vista;
 
+import java.util.ArrayList;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-import proyectoresoluciones.negocio.DTOSolicitud;
+import javax.swing.table.TableModel;
+import proyectoresoluciones.negocio.DTOResolucion;
 import proyectoresoluciones.negocio.UIFrameResolucion;
 
 public class FrameResolucion extends javax.swing.JFrame {
     FrameConfigPlantilla frameConfigPlantilla;
+    DTOResolucion dtoRes;
     private UIFrameResolucion uiFrameResolucion = new UIFrameResolucion();
     String[] titulosTabla = {"Fecha", "Carnet", "Nombre estudiante", "Periodo", "Curso", "Profesor", "Grupo", "N.Solicitud"}; 
     String[] titulos = {"Considerandos:"};
     private DefaultTableModel modelo;
     private DefaultTableModel modeloDatos;
     private String tipoArchivo = "";
+    
+    
 
 
     
     public FrameResolucion() {
+        
         modelo = new DefaultTableModel(null, titulos);
         modeloDatos = new DefaultTableModel(null, titulosTabla);
         
         initComponents();
         tablaConsiderandos.setModel(modelo);
         tablaDatos.setModel(modeloDatos);
+        
         uiFrameResolucion.cargarDatosPlantilla(this);
     }
 
     
-        public FrameResolucion(DTOSolicitud dtoSolicitud) {
+        public FrameResolucion(DTOResolucion dtoResolucion) {
+         dtoRes = dtoResolucion;
+
+        frameConfigPlantilla = new FrameConfigPlantilla(dtoRes);
         
+       
         modelo = new DefaultTableModel(null, titulos);
         modeloDatos = new DefaultTableModel(null, titulosTabla);       
         initComponents();
-        
-        frameConfigPlantilla = new FrameConfigPlantilla(dtoSolicitud);
-        
-        uiFrameResolucion.cargarDatosPlantilla(this);
+   
         tablaConsiderandos.setModel(modelo);
         tablaDatos.setModel(modeloDatos);
+                
+        uiFrameResolucion.cargarDatosPlantilla(this);
         
         this.setVisible(true);
     }
@@ -61,6 +71,7 @@ public class FrameResolucion extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Administrador de Resoluciones");
 
         tablaConsiderandos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -211,6 +222,7 @@ public class FrameResolucion extends javax.swing.JFrame {
     private void btnAnnadirConsiderandoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnnadirConsiderandoActionPerformed
         String[] fila = new String[1];
         fila[0] = txtConsiderando.getText();
+        txtConsiderando.setText("");
         modelo.addRow(fila);
         
         tablaConsiderandos.setModel(modelo);
@@ -229,6 +241,19 @@ public class FrameResolucion extends javax.swing.JFrame {
     }
     
     private void btnConfigurarValoresResActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfigurarValoresResActionPerformed
+         ArrayList<String> considerandos = new ArrayList<>();
+
+        int columnas = tablaConsiderandos.getColumnCount();
+        int filas = tablaConsiderandos.getRowCount();
+        for(int i=0; i<filas; i++) {
+            for(int j=0; j<columnas; j++){
+                considerandos.add((String) tablaConsiderandos.getValueAt(i,j));
+            }
+        
+        }
+        frameConfigPlantilla.setConsiderandos(considerandos);
+
+
         frameConfigPlantilla.setVisible(true);
     }//GEN-LAST:event_btnConfigurarValoresResActionPerformed
 

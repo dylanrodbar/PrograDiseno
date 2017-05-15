@@ -2,6 +2,7 @@ package proyectoresoluciones.vista;
 
 import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
+import javax.swing.JSpinner;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
@@ -18,9 +19,9 @@ public class FrameCrearSolicitud extends javax.swing.JFrame {
         this.setVisible(true);
     }
 
-    public JTextField getTxtFecha(){
+    public JSpinner getTxtFecha(){
         
-        return txtFecha;
+        return jSpinnerFecha;
     
     }
     
@@ -104,7 +105,6 @@ public class FrameCrearSolicitud extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtFecha = new javax.swing.JFormattedTextField();
         txtPeriodo = new javax.swing.JTextField();
         comboSituacion = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -135,8 +135,15 @@ public class FrameCrearSolicitud extends javax.swing.JFrame {
         btnCrearArchivo = new javax.swing.JButton();
         btnCargarGrupos = new javax.swing.JButton();
         btnVolver = new javax.swing.JButton();
+        jSpinnerFecha = new javax.swing.JSpinner();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabelIntruccion = new javax.swing.JLabel();
+        jLabelInstruccionArchivo = new javax.swing.JLabel();
+        jLabelInstruccionGrupos = new javax.swing.JLabel();
+        jLabelIcono = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Administrador de Resoluciones");
 
         txtPeriodo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,38 +178,53 @@ public class FrameCrearSolicitud extends javax.swing.JFrame {
             }
         });
 
+        lblFecha.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblFecha.setText("Fecha:");
 
-        lblCodigoCurso.setText("Código curso:");
+        lblCodigoCurso.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        lblCodigoCurso.setText("Código del curso en cuestión:");
 
-        lblPeriodo.setText("Período:");
+        lblPeriodo.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        lblPeriodo.setText("Período en que se dio el problema:");
 
-        lblSituacion.setText("Situación:");
+        lblSituacion.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        lblSituacion.setText("Tipo de situación:");
 
-        lblDescripcion.setText("Descripción:");
+        lblDescripcion.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        lblDescripcion.setText("Descripción de lo sucedido:");
 
-        jLabel1.setText("Datos del estudiante:");
+        jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 153, 51));
+        jLabel1.setText("Datos del estudiante");
 
+        lblNombre.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblNombre.setText("Nombre:");
 
+        lblIdentificacion.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblIdentificacion.setText("Identificación:");
 
+        lblCorreoElectronico.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblCorreoElectronico.setText("Correo electrónico:");
 
+        lblTelefono.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblTelefono.setText("Teléfono:");
 
-        lblIdSolicitante.setText("Identificación:");
+        lblIdSolicitante.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        lblIdSolicitante.setText("Identificación del Solicitante:");
 
-        btnCrearSolicitud.setText("Crear una solicitud");
+        btnCrearSolicitud.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        btnCrearSolicitud.setText("Crear Solicitud");
         btnCrearSolicitud.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCrearSolicitudActionPerformed(evt);
             }
         });
 
-        lblGrupo.setText("Grupo:");
+        lblGrupo.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        lblGrupo.setText("Grupo de curso indicado:");
 
-        lblProfesor.setText("Profesor:");
+        lblProfesor.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        lblProfesor.setText("ID Profesor (Automático):");
 
         comboGrupo.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -217,6 +239,7 @@ public class FrameCrearSolicitud extends javax.swing.JFrame {
 
         txtProfesor.setEditable(false);
 
+        btnCargarProfesor.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 11)); // NOI18N
         btnCargarProfesor.setText("Cargar profesor");
         btnCargarProfesor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -224,6 +247,7 @@ public class FrameCrearSolicitud extends javax.swing.JFrame {
             }
         });
 
+        btnCrearArchivo.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 11)); // NOI18N
         btnCrearArchivo.setText("Cargar archivo");
         btnCrearArchivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -231,6 +255,7 @@ public class FrameCrearSolicitud extends javax.swing.JFrame {
             }
         });
 
+        btnCargarGrupos.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 11)); // NOI18N
         btnCargarGrupos.setText("Cargar Grupos");
         btnCargarGrupos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -238,150 +263,186 @@ public class FrameCrearSolicitud extends javax.swing.JFrame {
             }
         });
 
-        btnVolver.setText("Volver");
+        btnVolver.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 11)); // NOI18N
+        btnVolver.setText(" <<< Volver");
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVolverActionPerformed(evt);
             }
         });
 
+        jSpinnerFecha.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 11)); // NOI18N
+        jSpinnerFecha.setModel(new javax.swing.SpinnerDateModel());
+
+        jSeparator1.setBackground(new java.awt.Color(255, 255, 0));
+        jSeparator1.setForeground(new java.awt.Color(255, 255, 51));
+
+        jLabelIntruccion.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jLabelIntruccion.setForeground(new java.awt.Color(0, 153, 51));
+        jLabelIntruccion.setText("Favor completar el siguiente formulario para hacer efectiva su solicitud");
+
+        jLabelInstruccionArchivo.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        jLabelInstruccionArchivo.setText("Seleccione el archivo que desee adjuntar:");
+
+        jLabelInstruccionGrupos.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        jLabelInstruccionGrupos.setText("Al seleccionar un grupo, podrá cargar el profesor respectivo:");
+
+        jLabelIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconoR.png"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabelIcono)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabelIntruccion))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(89, 89, 89)
+                        .addComponent(jLabel1)))
+                .addGap(0, 437, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addGap(51, 51, 51)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 896, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblIdentificacion)
+                            .addComponent(lblNombre))
+                        .addGap(137, 137, 137)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(txtIdentificacion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
+                                .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 697, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblDescripcion)
+                    .addComponent(jLabelInstruccionGrupos)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblGrupo)
+                                .addGap(69, 69, 69)
+                                .addComponent(comboGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblProfesor)
+                                    .addComponent(lblSituacion))
+                                .addGap(69, 69, 69)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(comboSituacion, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(42, 42, 42)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnCargarGrupos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnCargarProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblPeriodo)
+                            .addComponent(lblFecha)
+                            .addComponent(lblCodigoCurso))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(txtPeriodo)
+                            .addComponent(jSpinnerFecha, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(comboCodigoCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblIdSolicitante)
-                                    .addComponent(lblCodigoCurso)
-                                    .addComponent(lblPeriodo)
-                                    .addComponent(lblSituacion)
-                                    .addComponent(lblDescripcion)
-                                    .addComponent(lblFecha))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(txtIdSolicitante, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                                .addGap(3, 3, 3)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addComponent(comboGrupo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addComponent(comboCodigoCurso, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addComponent(comboSituacion, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addComponent(txtFecha)
-                                                    .addComponent(txtPeriodo, javax.swing.GroupLayout.DEFAULT_SIZE, 101, Short.MAX_VALUE))))
-                                        .addGap(18, 76, Short.MAX_VALUE)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(lblProfesor)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(txtProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(btnCrearArchivo)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                    .addComponent(btnCargarGrupos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addComponent(btnCargarProfesor, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                                .addComponent(txtIdentificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGap(100, 100, 100))))
+                                .addComponent(lblIdSolicitante)
+                                .addGap(53, 53, 53)
+                                .addComponent(txtIdSolicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(35, 35, 35)
+                                .addComponent(jLabelInstruccionArchivo))
+                            .addComponent(lblCorreoElectronico)
+                            .addComponent(lblTelefono)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblNombre)
-                                    .addComponent(lblIdentificacion)
-                                    .addComponent(lblCorreoElectronico)
-                                    .addComponent(lblTelefono)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(48, 48, 48)
-                                        .addComponent(jLabel1))
-                                    .addComponent(lblGrupo))
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addComponent(btnCrearSolicitud)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnVolver)
-                        .addGap(52, 52, 52))))
+                                .addGap(330, 330, 330)
+                                .addComponent(btnCrearSolicitud)))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnCrearArchivo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnVolver, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(jLabelIntruccion)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap(19, Short.MAX_VALUE)
+                        .addComponent(jLabelIcono)
+                        .addGap(18, 18, 18)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblIdSolicitante)
                     .addComponent(txtIdSolicitante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCrearArchivo))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblFecha)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(txtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(comboCodigoCurso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblCodigoCurso)
-                            .addComponent(lblProfesor)
-                            .addComponent(txtProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(13, 13, 13)
-                        .addComponent(lblGrupo))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnCargarProfesor)
-                            .addComponent(comboGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(8, 8, 8)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblPeriodo)
-                    .addComponent(btnCargarGrupos))
+                    .addComponent(btnCrearArchivo)
+                    .addComponent(jLabelInstruccionArchivo))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comboSituacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblSituacion))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblDescripcion)
-                        .addGap(29, 29, 29)))
+                    .addComponent(jSpinnerFecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblFecha))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCodigoCurso)
+                    .addComponent(comboCodigoCurso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblPeriodo)
+                    .addComponent(txtPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblGrupo)
+                    .addComponent(comboGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCargarGrupos))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelInstruccionGrupos)
+                .addGap(11, 11, 11)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblProfesor)
+                    .addComponent(txtProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCargarProfesor))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblSituacion)
+                    .addComponent(comboSituacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblDescripcion)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19)
                 .addComponent(jLabel1)
-                .addGap(13, 13, 13)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblNombre))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtIdentificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblIdentificacion))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblCorreoElectronico))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTelefono))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnCrearSolicitud)
-                        .addGap(32, 32, 32))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnVolver)
-                        .addGap(23, 23, 23))))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnVolver)
+                    .addComponent(btnCrearSolicitud))
+                .addGap(23, 23, 23))
         );
 
         pack();
@@ -400,7 +461,7 @@ public class FrameCrearSolicitud extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNombreActionPerformed
 
     private void btnCrearSolicitudActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearSolicitudActionPerformed
-        System.out.println(""+txtPeriodo.getText());
+
         uiFrameCrearSolicitud.crearSolicitud(this);
     }//GEN-LAST:event_btnCrearSolicitudActionPerformed
 
@@ -490,7 +551,13 @@ public class FrameCrearSolicitud extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> comboGrupo;
     private javax.swing.JComboBox<String> comboSituacion;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabelIcono;
+    private javax.swing.JLabel jLabelInstruccionArchivo;
+    private javax.swing.JLabel jLabelInstruccionGrupos;
+    private javax.swing.JLabel jLabelIntruccion;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSpinner jSpinnerFecha;
     private javax.swing.JLabel lblCodigoCurso;
     private javax.swing.JLabel lblCorreoElectronico;
     private javax.swing.JLabel lblDescripcion;
@@ -505,7 +572,6 @@ public class FrameCrearSolicitud extends javax.swing.JFrame {
     private javax.swing.JLabel lblTelefono;
     private javax.swing.JTextField txtCorreoElectronico;
     private javax.swing.JTextArea txtDescripcion;
-    private javax.swing.JFormattedTextField txtFecha;
     private javax.swing.JTextField txtIdSolicitante;
     private javax.swing.JTextField txtIdentificacion;
     private javax.swing.JTextField txtNombre;

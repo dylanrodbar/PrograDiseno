@@ -1,5 +1,6 @@
 package proyectoresoluciones.negocio;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import proyectoresoluciones.vista.FrameCrearSolicitud;
 import proyectoresoluciones.datos.Situacion;
@@ -35,7 +36,6 @@ public class UIFrameCrearSolicitud {
         
         if(frameCrearSolicitud.getTxtCorreoElectronico().getText().isEmpty()
                 || frameCrearSolicitud.getTxtDescripcion().getText().isEmpty()
-                || frameCrearSolicitud.getTxtFecha().getText().isEmpty()
                 || frameCrearSolicitud.getTxtIdentificacion().getText().isEmpty()
                 || frameCrearSolicitud.getTxtNombre().getText().isEmpty()
                 || frameCrearSolicitud.getTxtPeriodo().getText().isEmpty()
@@ -48,7 +48,7 @@ public class UIFrameCrearSolicitud {
         
         else{
             
-            fecha = frameCrearSolicitud.getTxtFecha().getText();
+            fecha = new SimpleDateFormat("yyyy-MM-dd").format(frameCrearSolicitud.getTxtFecha().getValue());
             codigoCurso = frameCrearSolicitud.getComboCodigoCurso().getSelectedItem().toString();
             periodo = frameCrearSolicitud.getTxtPeriodo().getText();
             situacion = Situacion.valueOf(frameCrearSolicitud.getComboSituacion().getSelectedItem().toString());

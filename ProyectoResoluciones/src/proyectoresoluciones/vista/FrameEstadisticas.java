@@ -40,6 +40,7 @@ public class FrameEstadisticas extends javax.swing.JFrame {
         btnVolver = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Administrador de Resoluciones");
 
         btnTopFive.setText("Top five");
         btnTopFive.addActionListener(new java.awt.event.ActionListener() {

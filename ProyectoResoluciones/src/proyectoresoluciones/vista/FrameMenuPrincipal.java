@@ -38,6 +38,7 @@ public class FrameMenuPrincipal extends javax.swing.JFrame {
         btnVerEstadisticas = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Administrador de Resoluciones");
 
         btnCargarDatos.setText("Cargar datos");
         btnCargarDatos.addActionListener(new java.awt.event.ActionListener() {

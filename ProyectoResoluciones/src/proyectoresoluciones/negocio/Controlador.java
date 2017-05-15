@@ -55,9 +55,9 @@ public class Controlador {
         public String cargarProfesor(String codigoCurso, String grupo, String periodo){
             
             String profesor = "";
-            
+
             profesor = gOferta.consultarProfesor(codigoCurso, grupo, periodo);         
-            
+
             return profesor;
             
         }

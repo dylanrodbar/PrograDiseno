@@ -45,8 +45,6 @@ public class UIFrameResolucion {
         noGrupo = frameResolucion.getFrameConfigPlantilla().getTxtNumeroGrupo().getText();
         periodo = frameResolucion.getFrameConfigPlantilla().getTxtPeriodo().getText();
         profesor = frameResolucion.getFrameConfigPlantilla().getTxtProfesor().getText();
-        asunto = frameResolucion.getFrameConfigPlantilla().getTxtAsunto1().getText();
-        asunto3 = frameResolucion.getFrameConfigPlantilla().getTxtAsunto3().getText();
         hora = frameResolucion.getFrameConfigPlantilla().getTxtHora().getText();
         numeroSolicitud = Integer.parseInt(frameResolucion.getFrameConfigPlantilla().getTxtNumeroSolicitud().getText());
         
@@ -96,8 +94,6 @@ public class UIFrameResolucion {
         noGrupo = frameResolucion.getFrameConfigPlantilla().getTxtNumeroGrupo().getText();
         periodo = frameResolucion.getFrameConfigPlantilla().getTxtPeriodo().getText();
         profesor = frameResolucion.getFrameConfigPlantilla().getTxtProfesor().getText();
-        asunto = frameResolucion.getFrameConfigPlantilla().getTxtAsunto1().getText();
-        asunto3 = frameResolucion.getFrameConfigPlantilla().getTxtAsunto3().getText();
         hora = frameResolucion.getFrameConfigPlantilla().getTxtHora().getText();
         numeroSolicitud = Integer.parseInt(frameResolucion.getFrameConfigPlantilla().getTxtNumeroSolicitud().getText());
         System.out.println("NUMERO SOLICITUD:");
@@ -116,9 +112,7 @@ public class UIFrameResolucion {
         dtoResolucion.setNoGrupo(noGrupo);
         dtoResolucion.setPeriodo(periodo);
         dtoResolucion.setProfesor(profesor);
-        dtoResolucion.setAsunto(asunto);
-        dtoResolucion.setAsunto2(asunto2);
-        dtoResolucion.setAsunto3(asunto3);
+
         dtoResolucion.setNumeroSolicitud(numeroSolicitud);
         
         
@@ -174,8 +168,6 @@ public class UIFrameResolucion {
         noGrupo = frameResolucion.getFrameConfigPlantilla().getTxtNumeroGrupo().getText();
         periodo = frameResolucion.getFrameConfigPlantilla().getTxtPeriodo().getText();
         profesor = frameResolucion.getFrameConfigPlantilla().getTxtProfesor().getText();
-        asunto = frameResolucion.getFrameConfigPlantilla().getTxtAsunto1().getText();
-        asunto3 = frameResolucion.getFrameConfigPlantilla().getTxtAsunto3().getText();
         hora = frameResolucion.getFrameConfigPlantilla().getTxtHora().getText();
         
         dtoResolucion.setConsiderandos(considerandos);
@@ -190,9 +182,7 @@ public class UIFrameResolucion {
         dtoResolucion.setNoGrupo(noGrupo);
         dtoResolucion.setPeriodo(periodo);
         dtoResolucion.setProfesor(profesor);
-        dtoResolucion.setAsunto(asunto);
-        dtoResolucion.setAsunto3(asunto3);
-        
+
         
         facade.generarHTML(dtoResolucion);
         
@@ -245,8 +235,7 @@ public class UIFrameResolucion {
         noGrupo = frameResolucion.getFrameConfigPlantilla().getTxtNumeroGrupo().getText();
         periodo = frameResolucion.getFrameConfigPlantilla().getTxtPeriodo().getText();
         profesor = frameResolucion.getFrameConfigPlantilla().getTxtProfesor().getText();
-        asunto = frameResolucion.getFrameConfigPlantilla().getTxtAsunto1().getText();
-        asunto3 = frameResolucion.getFrameConfigPlantilla().getTxtAsunto3().getText();
+
         hora = frameResolucion.getFrameConfigPlantilla().getTxtHora().getText();
         
         dtoResolucion.setConsiderandos(considerandos);
@@ -261,10 +250,7 @@ public class UIFrameResolucion {
         dtoResolucion.setNoGrupo(noGrupo);
         dtoResolucion.setPeriodo(periodo);
         dtoResolucion.setProfesor(profesor);
-        dtoResolucion.setAsunto(asunto);
-        dtoResolucion.setAsunto3(asunto3);
-        
-        
+
         facade.generarArchivo(dtoResolucion, tipoArchivo);
         
         frameResolucion.limpiarTabla();
@@ -315,8 +301,7 @@ public class UIFrameResolucion {
         noGrupo = frameResolucion.getFrameConfigPlantilla().getTxtNumeroGrupo().getText();
         periodo = frameResolucion.getFrameConfigPlantilla().getTxtPeriodo().getText();
         profesor = frameResolucion.getFrameConfigPlantilla().getTxtProfesor().getText();
-        asunto = frameResolucion.getFrameConfigPlantilla().getTxtAsunto1().getText();
-        asunto3 = frameResolucion.getFrameConfigPlantilla().getTxtAsunto3().getText();
+
         hora = frameResolucion.getFrameConfigPlantilla().getTxtHora().getText();
         
         dtoResolucion.setConsiderandos(considerandos);
@@ -331,10 +316,7 @@ public class UIFrameResolucion {
         dtoResolucion.setNoGrupo(noGrupo);
         dtoResolucion.setPeriodo(periodo);
         dtoResolucion.setProfesor(profesor);
-        dtoResolucion.setAsunto(asunto);
-        dtoResolucion.setAsunto3(asunto3);
-        
-        
+
         facade.generarPDF(dtoResolucion);
         
         frameResolucion.limpiarTabla();

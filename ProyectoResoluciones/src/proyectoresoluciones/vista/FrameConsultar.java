@@ -33,6 +33,7 @@ public class FrameConsultar extends javax.swing.JFrame {
         btnHacerSolicitud = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Administrador de Resoluciones");
 
         lblNumeroSolicitud.setText("Número de solicitud:");
 

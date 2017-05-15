@@ -57,9 +57,8 @@ public class DAOSolicitud extends DAO {
         String profesor = solicitud.getProfesor();
         String archivo = solicitud.getArchivo();
         String estado = "PENDIENTE"; //Ver esto
-        String evidencia = "reyeno";
+        String evidencia = "relleno";
         //2017-3-22
-        
         Connection con= null;
         con= proyectoresoluciones.dbConnection.conectDB();
             try {
@@ -203,7 +202,7 @@ public class DAOSolicitud extends DAO {
         try {
             
             //Create Workbook instance holding reference to .xlsx file
-            try (FileInputStream file = new FileInputStream(new File("C:\\Users\\MaríaLaura\\Documents\\proyectoDiseno\\ProyectoResoluciones\\DatosFormulario.xlsx"))) {
+            try (FileInputStream file = new FileInputStream(new File("C:\\Users\\valeb\\Downloads\\Proyecto_1\\Proyecto 1\\DatosProyecto1.xlsx"))) {
                 //Create Workbook instance holding reference to .xlsx file
                 XSSFWorkbook workbook = new XSSFWorkbook(file);
                 

@@ -76,7 +76,7 @@ public class DAOResolucion {
     }
     
     public Resolucion configurarResolucion(String codigo, String nombreAYR, String hora, String fecha, String nombreDirector, String estudiante, String carnet,
-                                            String curso, String noGrupo, String periodo, String profesor, String asunto, String asunto2, String asunto3, ArrayList<Considerando> considerandos, int numeroSolicitud){
+                                            String curso, String noGrupo, String periodo, String profesor,  ArrayList<Considerando> considerandos, int numeroSolicitud){
         
         Resolucion resolucionClonada = this.resolucion.clonar();
         resolucionClonada.setCodigo(codigo);
@@ -90,8 +90,6 @@ public class DAOResolucion {
         resolucionClonada.setNoGrupo(noGrupo);
         resolucionClonada.setPeriodo(periodo);
         resolucionClonada.setProfesor(profesor);
-        resolucionClonada.setAsunto(asunto);
-        resolucionClonada.setAsunto3(asunto3);
         resolucionClonada.setConsiderandos(considerandos);
         resolucionClonada.setNumSolicitud(numeroSolicitud);
         

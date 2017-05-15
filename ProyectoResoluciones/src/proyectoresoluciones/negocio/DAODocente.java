@@ -75,7 +75,7 @@ public class DAODocente extends DAO {
         try {
             
             //Create Workbook instance holding reference to .xlsx file
-            try (FileInputStream file = new FileInputStream(new File("C:\\Users\\MaríaLaura\\Documents\\proyectoDiseno\\ProyectoResoluciones\\DatosProyecto1.xlsx"))) {
+            try (FileInputStream file = new FileInputStream(new File("C:\\Users\\valeb\\Downloads\\Proyecto_1\\Proyecto 1\\DatosProyecto1.xlsx"))) {
                 //Create Workbook instance holding reference to .xlsx file
                 XSSFWorkbook workbook = new XSSFWorkbook(file);
                 

@@ -17,16 +17,20 @@ public class DTOResolucion {
     private String noGrupo;
     private String periodo;
     private String profesor;
-    private String asunto;
-    private String asunto2;
-    private String asunto3;
+
+
     private int numeroSolicitud;
     
     
-    private Solicitud solicitud;private ArrayList<Considerando> considerandos = new ArrayList<Considerando>();
+    private Solicitud solicitud;
+
+    private ArrayList<Considerando> considerandos = new ArrayList<Considerando>();
     
     
     public DTOResolucion(){}
+    
+  
+ 
 
     public String getCodigo() {
         return codigo;
@@ -83,6 +87,8 @@ public class DTOResolucion {
         }
         
     }
+    
+
 
     /**
      * @return the hora
@@ -182,51 +188,6 @@ public class DTOResolucion {
         this.profesor = profesor;
     }
 
-    /**
-     * @return the asunto
-     */
-    public String getAsunto() {
-        return asunto;
-    }
-
-    /**
-     * @param asunto the asunto to set
-     */
-    public void setAsunto(String asunto) {
-        this.asunto = asunto;
-    }
-
-    /**
-     * @return the asunto2
-     */
-    public String getAsunto2() {
-        return asunto2;
-    }
-
-    /**
-     * @param asunto2 the asunto2 to set
-     */
-    public void setAsunto2(String asunto2) {
-        this.asunto2 = asunto2;
-    }
-
-    /**
-     * @return the asunto3
-     */
-    public String getAsunto3() {
-        return asunto3;
-    }
-
-    /**
-     * @param asunto3 the asunto3 to set
-     */
-    public void setAsunto3(String asunto3) {
-        this.asunto3 = asunto3;
-    }
-
-    /**
-     * @return the numeroSolicitud
-     */
     public int getNumeroSolicitud() {
         return numeroSolicitud;
     }

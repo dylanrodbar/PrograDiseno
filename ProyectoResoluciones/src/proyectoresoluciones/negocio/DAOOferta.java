@@ -51,7 +51,7 @@ public class DAOOferta extends DAO {
                 ResultSet rs = cstmt.executeQuery("{call select_profesor_curso_grupo(\'"+codigoCurso+"\',\'"+periodo+"\',\'"+grupoC+"\')}");
                 while(rs.next()){
                     cedulaProfesor=rs.getString(2);
-                    System.out.println(cedulaProfesor);
+
                     
                 }
                 
@@ -116,7 +116,7 @@ public class DAOOferta extends DAO {
         try {
             
             //Create Workbook instance holding reference to .xlsx file
-            try (FileInputStream file = new FileInputStream(new File("C:\\Users\\MaríaLaura\\Documents\\proyectoDiseno\\ProyectoResoluciones\\DatosProyecto1.xlsx"))) {
+            try (FileInputStream file = new FileInputStream(new File("C:\\Users\\valeb\\Downloads\\Proyecto_1\\Proyecto 1\\DatosProyecto1.xlsx"))) {
                 //Create Workbook instance holding reference to .xlsx file
                 XSSFWorkbook workbook = new XSSFWorkbook(file);
                 
